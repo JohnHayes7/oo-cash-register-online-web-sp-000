@@ -50,7 +50,7 @@ class CashRegister
   
   def items
     @item_hash.each do |product, price|
-      if product.quantity == nil 
+      if self.quantity == nil 
       @item_array << product
       else
       product.quantity.times {@item_array << product}
