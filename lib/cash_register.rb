@@ -53,7 +53,7 @@ class CashRegister
       if product.quantity == nil 
       @item_array << product
       else
-      @quantity.times {@item_array << product}
+      product.quantity.times {@item_array << product}
       end
     end
     @item_array
