@@ -29,7 +29,7 @@ class CashRegister
       @item_array << @title
       else
         @total = @total + (price * quantity)
-        self.quantity.times {@item_array << product}
+        quantity.times {@item_array << product}
       end
   end
   
