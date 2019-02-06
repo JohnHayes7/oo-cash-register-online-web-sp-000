@@ -52,7 +52,7 @@ class CashRegister
   def items
     @item_hash.each do |product, price|
       if self.quantity == nil 
-      
+        @item_array << @title
       else
       
       end
