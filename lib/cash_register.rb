@@ -50,13 +50,6 @@ class CashRegister
   end
   
   def items
-    # @item_hash.each do |product, price|
-    #   if self.quantity == nil 
-    #     @item_array << @title
-    #   else
-    #   @quantity.times {@item_array << product}
-    #   end
-    # end
     @item_array
   end
   
