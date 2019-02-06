@@ -26,7 +26,7 @@ class CashRegister
     @item_hash[@title] = @price
       if quantity == nil
       @total = @total + price
-      
+      @item_array << product
       else
         @total = @total + (price * quantity)
       end
@@ -49,6 +49,13 @@ class CashRegister
   end
   
   def items
+    @item_hash.each do |product, price|
+      if self.quantity == nil 
+      
+      else
+      self.quantity.times {@item_array << product}
+      end
+    end
     @item_array
   end
   
