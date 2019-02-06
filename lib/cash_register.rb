@@ -26,7 +26,7 @@ class CashRegister
     @item_hash[@title] = @price
       if quantity == nil
       @total = @total + price
-      @item_array << title
+      @item_array << @title
       else
         @total = @total + (price * quantity)
       end
