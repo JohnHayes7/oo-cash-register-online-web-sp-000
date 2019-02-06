@@ -12,6 +12,7 @@ class CashRegister
     @discount = discount
     @item_hash = {}
     @item_array = []
+    @last_value = @item_hash.value
   end
   
   
